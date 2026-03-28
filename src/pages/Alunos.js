@@ -7,22 +7,17 @@ function Alunos(){
     const [loading, setLoading] = useState(true);
     const [busca, setBusca] = useState('');
     
-    useEffect( ()=> {
-
-        const dados = [
-            {id: 1, nome: 'Maria Silva', curso: 'Informática'},
-            {id: 2, nome: 'João Souza', curso: 'Informática'},
-            {id: 3, nome: 'Ana Costa', curso: 'Informática'},
-            {id: 4, nome: 'José da Silva', curso: 'Informática'},
-            {id: 5, nome: 'Fernanda Santos', curso: 'Informática'},
-            {id: 6, nome: 'Gabriel Henrique', curso: 'Informática'},
-        ]
-
-        setTimeout(() =>{
-            setAlunos(dados);
-            setLoading(false);
-        }, 2000);
-
+    useEffect(() => {
+        fetch("http://localhost:5001/alunos")
+            .then((resposta) => resposta.json())
+            .then((dados) => {
+                setAlunos(dados);
+                setLoading(false);
+            })
+            .catch((erro) => {
+                console.error("Erro ao buscar os alunos:", erro);
+                setLoading(false);
+            });
     }, []);
 
     const alunosFiltrados = alunos.filter(aluno => 
