@@ -19,6 +19,9 @@ function Header(){
                 <Link to='/biblioteca'>
                     <FaBook/> Biblioteca
                 </Link>
+                <Link to='/cadastrarLivros'>
+                    <FaBook /> Cadastrar Livros
+                </Link>
             </nav>
         </header>
     );

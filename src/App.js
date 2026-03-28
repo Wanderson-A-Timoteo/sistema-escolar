@@ -6,6 +6,7 @@ import CadastrarAlunos from "./pages/CadastrarAlunos";
 import Alunos from './pages/Alunos';
 import Biblioteca from './pages/Biblioteca';
 import Dashboard from './pages/Dashboard';
+import CadastrarLivros from "./pages/CadastrarLivros";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Route path='/Alunos' element={<Alunos/>} />
             <Route path='/Biblioteca' element={<Biblioteca/>} />
             <Route path='/Dashboard' element={<Dashboard/>} />
+            <Route path='/cadastrarLivros' element={<CadastrarLivros/>} />
           </Routes>
         </main>
 
