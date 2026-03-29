@@ -9,6 +9,7 @@
   width: 100%;
   max-width: 800px;
   margin: 30px auto;
+  box-sizing: border-box;
 }
 
 .grupoInput {
@@ -54,4 +55,37 @@
 
 .form button:hover {
   background-color: #1e40af;
+}
+
+.listaAlunos {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.alunoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: var(--bg-secundaria);
+  color: var(--text-primaria);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.botaoRemover {
+  background: none;
+  border: 1px solid #ff4d4f;
+  color: #ff4d4f;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px 8px;
+  transition: 0.3s;
+}
+
+.botaoRemover:hover {
+  background-color: #ff4d4f;
+  color: white;
 }

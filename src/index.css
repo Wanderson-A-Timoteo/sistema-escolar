@@ -64,3 +64,41 @@ main {
 .tema-escuro th {
   color: var(--text-primaria);
 }
+
+.lista-sessao {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.item-sessao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: var(--bg-secundaria);
+  color: var(--text-primaria);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-remover {
+  background: none;
+  border: 1px solid #ff4d4f;
+  color: #ff4d4f;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-remover:hover {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.borda-azul {
+  border-left: 5px solid #2563eb;
+}

@@ -6,13 +6,13 @@
 }
 
 .sucesso {
-  color: #15803d;
-  background-color: #dcfce3;
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
   padding: 12px;
   border-radius: 6px;
   margin-bottom: 20px;
   font-weight: bold;
-  border: 1px solid #bbf7d0;
+  border: 1px solid #22c55e;
 }
 
 .preview {
@@ -27,9 +27,12 @@
 }
 
 .preview li {
-  background: #f3f4f6;
+  background-color: var(--bg-secundaria);
+  color: var(--text-primaria);
   padding: 12px;
   margin-bottom: 8px;
   border-radius: 6px;
+  border-left: 4px solid #2563eb;
+  border: 1px solid var(--border-color);
   border-left: 4px solid #2563eb;
 }

@@ -23,7 +23,7 @@ function CadastrarLivros() {
 
             {livros.length > 0 && (
                 <div className={styles.preview}>
-                    <h3>Livros Adicionados (Sessão atual):</h3>
+                    <h3>Livros Adicionados:</h3>
                     <ul>
                         {livros.map(livro => (
                             <li key={livro.id}>

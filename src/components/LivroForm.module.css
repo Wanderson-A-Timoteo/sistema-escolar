@@ -7,12 +7,12 @@
   border-radius: 8px;
   border: 1px solid var(--border-color);
   width: 100%;
+  box-sizing: border-box;
 }
 
 .grupoInput {
   display: flex;
   flex-direction: column;
-  /* O segredo para empilhar label e input! */
   gap: 8px;
 }
 
@@ -23,7 +23,6 @@
 
 .grupoInput input {
   width: 100%;
-  /* Força o input a ocupar todo o espaço disponível */
   padding: 12px;
   font-size: 16px;
   background-color: var(--bg-input);
@@ -32,7 +31,6 @@
   border-radius: 4px;
   outline: none;
   box-sizing: border-box;
-  /* Impede que o padding quebre o tamanho do input */
 }
 
 .grupoInput input:focus {
@@ -41,7 +39,6 @@
 
 .form button {
   width: 100%;
-  /* Deixa o botão largo e imponente, padrão de mercado */
   padding: 14px;
   background-color: #777;
   color: white;
@@ -57,3 +54,29 @@
 .form button:hover {
   background-color: #1e40af;
 }
+
+.listaLivros {
+  margin-top: 20px;
+}
+
+.livroItem {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: var(--bg-secundaria);
+  color: var(--text-primaria);
+  border-left: 4px solid #2563eb;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sucesso {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  border: 1px solid #22c55e;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
