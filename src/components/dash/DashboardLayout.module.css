@@ -1,11 +1,12 @@
-
-.layout{
+.layout {
     display: flex;
-    min-height: 100vh;
+    flex: 1;
+    align-items: stretch;
+    /* Manda os filhos (Sidebar e content) esticarem até o fim */
 }
 
-.content{
-    background: #f4f6f9;
+.content {
+    background-color: var(--bg-primaria);
     flex: 1;
     padding: 30px;
 }

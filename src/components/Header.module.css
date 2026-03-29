@@ -10,7 +10,8 @@
 
 nav{
     display: flex;
-    gap: 16px
+    gap: 16px;
+    align-items: center;
 }
 
 a {
@@ -23,4 +24,21 @@ a {
 
 a:hover{
     text-decoration: underline;
+}
+
+.botaoTema {
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.botaoTema:hover {
+    transform: scale(1.2);
+    color: #61dafb;
 }

@@ -1,8 +1,7 @@
 import Sidebar from "./Sidebar";
-import styles from './DashboardLayout.module.css'
+import styles from './DashboardLayout.module.css';
 
 function DashboardLayout({children}){
-
     return(
         <div className={styles.layout}>
             <Sidebar/>

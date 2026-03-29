@@ -1,12 +1,9 @@
-import { useState } from 'react';
 import styles from './Home.module.css';
-import {FaSun, FaMoon, FaUserGraduate, FaClipboardList, FaBook} from 'react-icons/fa';
+import {FaUserGraduate, FaClipboardList, FaBook} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 import {AiFillDashboard} from 'react-icons/ai'
 
 function Home(){
-
-    const[darkMode, setDarkMode] = useState(false);
 
     const alunosPorSerie = [
         {serie: '1º ano', total: 12},
@@ -15,19 +12,11 @@ function Home(){
     ];
 
     return(
-
-        <div className={`${styles.container} ${darkMode ? styles.dark : styles.light}`}>
+        <div className={styles.container}>
             
             <header className={styles.header}>
                 <h1>Home</h1>
                 <p>Bem vindos à Escola React.js</p>
-
-                <button 
-                    className={styles.themeBtn}
-                    onClick={() => setDarkMode(!darkMode)}
-                >
-                    {darkMode ? <FaSun/> : <FaMoon/>}
-                </button>
             </header>
 
             <section className={styles.cards}>
@@ -35,7 +24,7 @@ function Home(){
                     <FaUserGraduate className={styles.icon}/>
                     <h3>Cadastro</h3>
                     <p>Gerenciamento de alunos</p>
-                    <Link to='/cadastarAlunos'>Acessar</Link>
+                    <Link to='/cadastrarAlunos'>Acessar</Link>
                 </div>
                 <div className={styles.card}>
                     <FaClipboardList className={styles.icon}/>
@@ -74,7 +63,6 @@ function Home(){
 
         </div>
     );
-
 }
 
 export default Home;
