@@ -7,39 +7,19 @@ function Biblioteca(){
     const [livros, setLivros] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect( ()=> {
-
-        setTimeout( () => {
-            //simulando dados vindo de uma API
-            fetch("http://localhost:5001/livros")
-            .then((resp) => resp.json())
-            .then((data) => {
-                setLivros(data);
-                setLoading(false);
-            })
-            .catch((err) => {
-                console.log(err);
-                setLoading(false);
-            });
-
+    useEffect(() => {
+        setTimeout(() => {
+            fetch(process.env.PUBLIC_URL + "/db.json")
+                .then((resp) => resp.json())
+                .then((data) => {
+                    setLivros(data.livros); // pega apenas o array de livros
+                    setLoading(false);
+                })
+                .catch((err) => {
+                    console.log(err);
+                    setLoading(false);
+                });
         }, 2000);
-    
-        /*
-        const dados = [
-            {id: 1, titulo: 'Fundamentos de React', autor: 'Maria Silva'},
-            {id: 2, titulo: 'React na prática', autor: 'João Souza'},
-            {id: 3, titulo: 'Linguagens de programação', autor: 'Ana Costa'},
-            {id: 4, titulo: 'Livro 4', autor: 'José da Silva'},
-            {id: 5, titulo: 'Livro 5', autor: 'Fernanda Santos'},
-            {id: 6, titulo: 'Livro 6', autor: 'Gabriel Henrique'},
-        ]
-
-        setTimeout(() =>{
-            setLivros(dados);
-            setLoading(false);
-        }, 2000);
-        */
-
     }, []);
     
     if(loading){

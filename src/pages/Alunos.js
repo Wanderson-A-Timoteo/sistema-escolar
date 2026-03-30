@@ -8,10 +8,10 @@ function Alunos(){
     const [busca, setBusca] = useState('');
     
     useEffect(() => {
-        fetch("http://localhost:5001/alunos")
-            .then((resposta) => resposta.json())
+        fetch(process.env.PUBLIC_URL + "/db.json")
+            .then((res) => res.json())
             .then((dados) => {
-                setAlunos(dados);
+                setAlunos(dados.alunos); // pega apenas o array de alunos
                 setLoading(false);
             })
             .catch((erro) => {
