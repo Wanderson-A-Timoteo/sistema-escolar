@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
@@ -15,7 +15,6 @@ function App() {
   return (
 
       <div className={darkMode ? 'tema-escuro' : 'tema-claro'}>
-        <BrowserRouter>
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <main>
             <Routes>
@@ -28,7 +27,6 @@ function App() {
             </Routes>
           </main>
           <Footer/>
-        </BrowserRouter>
       </div>
   );
 }
