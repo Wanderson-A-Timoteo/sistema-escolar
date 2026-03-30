@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+<h1 align="center">
+    🎓 Sistema Escolar
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-executar aplicação">Executar Aplicação</a>
+  
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## 💻 Projeto
 
-### `npm start`
+Bem-vindo ao repositório do **Sistema Escolar**, uma aplicação web front-end desenvolvida em **React.js**. Este projeto foi construído para gerenciar o cadastro e a listagem de alunos e livros, apresentando também um dashboard e suporte a Tema Claro/Escuro (Dark Mode). 💜
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> Aplicação com deploy automatizado no GitHub Pages.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔗 **Demo Online:** [sistema-escolar.github.io](https://wanderson-a-timoteo.github.io/sistema-escolar/)
 
-### `npm test`
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Funcionalidades
 
-### `npm run build`
+- **Home & Dashboard:** Visão geral com cartões de acesso rápido e gráficos de barras estilizados com CSS puro indicando a quantidade de alunos por série.
+- **Gestão de Alunos:**
+  - Cadastro de novos alunos com validação de formulário.
+  - Listagem dinâmica de alunos matriculados consumindo dados simulados.
+  - Exclusão de alunos da lista na sessão atual.
+- **Biblioteca:** Listagem em formato de grade (grid) dos livros disponíveis no acervo da escola.
+- **Dark Mode Global:** Alternância fluida entre tema claro e escuro, controlada por variáveis CSS e preservada através de propriedades globais (Context/State).
+- **Design Responsivo:** Interface construída com Flexbox, CSS Modules e ícones vetoriais (`react-icons`).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tecnologias Utilizadas
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React.js** (Hooks: `useState`, `useEffect`)
+- **React Router DOM** (Navegação SPA com `HashRouter`)
+- **React Icons** (SVG Icons)
+- **CSS Modules** (Estilização em escopo local e variáveis globais)
+- **Fetch API** (Consumo de arquivo JSON estático)
+- **GitHub Pages** (Hospedagem)
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Executar Aplicação
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔥 Executando Localmente a Aplicação
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Caso você deseja executar o projeto na sua máquina local, basta seguir os passos abaixo:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 🌀 Começando...
 
-## Learn More
+Para começar, você deve simplesmente clonar o repositório do projeto na sua máquina e instalar as dependências.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### ❗️ Instalando as Dependências (via Windows):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Abre o cmd (caso esteja utilizando o Windows) navegue até o local onde você clonou o projeto
 
-### Code Splitting
+```
+cd "C:\Users\NomeDoComputador\Documents\clonedoprojeto"
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Depois, quando estiver na pasta do projeto, basta acessar o projeto na pasta `sistema-escolar` digitar no cmd a seguinte instrução: **(dentro da pasta `sistema-escolar` do projeto clonado)**
 
-### Analyzing the Bundle Size
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ao digitar a instrução acima, automaticamente ele irá baixar todas as dependências listadas e definidas no arquivo package.json:
 
-### Making a Progressive Web App
+- `node_modules` - que contêm os packages do npm que precisará para o projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### 💨 Executando a Aplicação
 
-### Advanced Configuration
+Bom, agora **(dentro da pasta `sistema-escolar` do projeto clonado)** abra um terminal para o projeto ser executado e digite:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+npm start
+```
 
-### Deployment
+Pronto! dessa forma o projeto estará rodando localmente em sua maquina, acesse:
+```
+http://localhost:3000/sistema-escolar
+```
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 🚩 Tenho Dúvidas... O que fazer?
 
-### `npm run build` fails to minify
+Caso tenham dúvidas sobre o código do projeto, sintam-se a vontade em abrir uma **[ISSUE AQUI](https://github.com/Wanderson-A-Timoteo/sistema-escolar/issues)**. Assim que possível, estarei respondendo as todas as dúvidas que tiverem!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+
+## Autor:
+
+Feito com ♥ by
+
+<div align="center">
+  <a href="https://github.com/Wanderson-A-Timoteo">
+    <img src="https://github.com/Wanderson-A-Timoteo.png" width="120px;" alt="Foto de Perfil do Wanderson Timóteo no GitHub" style="border-radius: 50%;"/>
+  </a>
+  <br />
+  <br />
+  <h4>Wanderson Timóteo</h4>
+    
+  <a href="https://www.wandersontimoteo.com.br/" target="_blank">
+    <b>🌐 Visite meu Portfólio</b>
+  </a>
+  &nbsp;|&nbsp;
+  <a href="https://wanderson-a-timoteo.github.io/perfil-de-contato/" target="_blank">
+    <b>🔗 Entre em Contato</b>
+  </a>
+</div>
